@@ -168,9 +168,28 @@ body{
     text-shadow: #ffffff 0.5px 0 2px;
 }
 .conteudo-sobre{
-    height: 100vh;
+    height: 98vh;
     padding: 2vw;
-    display: flex;
+    display: grid;
+    grid-template-areas:"a a"
+                        "b c";
+    grid-template-rows: 5em 30em;
+}
+.link-email{
+    color: inherit;
+    font-family: inherit;
+}
+.conteudo-sobre-tituloa{
+    grid-area: a;
+}
+.conteudo-sobre-iconyt{
+    grid-area: b;
+    margin-right: 1.5vw;
+    margin-top: 2vh;
+    filter: invert(100%);
+}
+.conteudo-sobre-main{
+    grid-area: c;
 }
 .conteudo-sobre-yt{
     height: 6vh;
