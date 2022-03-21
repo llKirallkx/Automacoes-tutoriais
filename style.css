@@ -1,0 +1,268 @@
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+body{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/* Fim Reset CSS */
+
+/* Conteudo principal */
+body{
+    background-color: #1A425E;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fim conteudo principal */
+
+/* Cabeçalho */
+.cabeca{
+    top: 0;
+    background-color: #40739e;
+    height: 7vh;
+    border-bottom: 1px solid white;
+}
+.menu-nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu-link{
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    height: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    align-items: center;
+}
+.menu-link:hover{
+    background-color: #ffffff;
+    color: rgb(21, 110, 151);
+    transition: 0.7s;
+}
+
+
+/* Fim cabeçalho */
+
+/* Conteudo inicial */
+
+.conteudo-inical{
+    display: flex;
+    height: 88vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12vh;
+    align-items: center;
+    background: linear-gradient(#225d8885, #183950f3), url(./img/conteudo-inicial.jpeg);
+    background-size: 100%;
+}
+.conteudo-inicial-mensagem{
+    display: flex;
+    align-items: center;
+    border: 12px double white;
+    border-radius: 30px;
+    margin-top: 12vh;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.336);
+    width: fit-content;
+    height: fit-content;
+}
+.conteudo-inicial-mensagem:hover{
+    color: #FBE46B
+}
+
+.conteudo-inicial-bv, .conteudo-inicial-sbv{
+    color: white;
+    text-align: center;
+    text-shadow: #132f4277 2px 3px;
+    font-weight: bold;
+    font-family: 'Spinnaker', sans-serif;
+}
+.conteudo-inicial-bv{
+    font-size: 2.1em;
+}
+.conteudo-youtube{
+    border-bottom: 5px solid white;
+}
+.conteudo-youtube:hover{
+    border-color: #ec003385;
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+
+}
+
+.botao-youtube{
+    padding: 8px;
+    height: 100%;
+}
+
+.conteudo-inicial-img{
+    width: 76%;
+}
+
+/* FIM - Conteudo inicial */
+
+/* Menu lateral */
+.menu-lateral{
+    margin-left: 2vw;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+
+}
+.menu-lateral-link{
+    color: white;
+    margin: 2vh;
+    list-style: none;
+    font-family: 'Fredoka', sans-serif;
+}
+.menu-lateral-nav{
+    display: flex;
+    flex-direction: column;
+}
+.menu-lateral-link:hover{
+    transition: 0.4s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    padding: 0;
+    width: fit-content;
+}
+/* Fim menu lateral */
+
+
+/* Main- Conteudo principal */
+.conteudo{
+    display: flex;
+    
+}
+.conteudo-principal-a, .conteudo-blog, .conteudo-contato, .conteudo-doacoes{
+    margin-left: 2vw;
+    background: linear-gradient(#17486b9a, #1839501e);
+}
+
+.titulos{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3em;
+    margin-bottom: 2vw;
+    color: rgb(184, 187, 194);
+    text-shadow: #ffffff 0.5px 0 2px;
+}
+.conteudo-sobre{
+    height: 100vh;
+    padding: 2vw;
+    display: flex;
+}
+.conteudo-sobre-yt{
+    height: 6vh;
+}
+.sobre-p{
+    font-family: 'Prata', serif;
+    font-weight: 540;
+    font-size: larger;
+    color: rgb(160, 164, 168);
+    text-align: justify;
+}
+.sobre-p-contato{
+    font-size: x-large;
+}
+
+.conteudo-blog{
+    height: 95vh;
+}
+
+
+/* Fim Main- Conteudo principal */
+
+/* Aside- direita */
+
+.menu-direita{
+    margin-top: 2.5vh ;
+
+}
+.titulos-direita{
+    margin-top: 2vh;
+    margin-left: 0.9vw;
+    color: white;
+    font-family: 'Spinnaker', sans-serif;
+    font-size: medium;
+}
+.menu-direita-art{
+    border-bottom: 0.6px solid rgba(209, 209, 209, 0.801);
+}
+
+.menu-direita-ahk-img{
+    max-width: 15vw;
+    padding: 13px;
+    filter: blur(2.3px);
+}
+.menu-direita-ahk-img:hover{
+    filter: blur(3px) brightness(55%);
+    transition: 0.3s;
+}
+
+#menu-direita-ig{
+    margin-top: 50vh;
+    padding-bottom: 4px;
+    width: fit-content;
+    border-bottom: 2px solid white;
+}
+.menu-direita-ig-img, .menu-direita-telegram-img, .menu-direita-discord-img{
+    height: 2em;
+    filter: invert(100%);
+    padding-left: 3px;
+}
+.menu-direita-telegram-img{
+    padding-right: 4px;
+}
+.menu-direita-discord-img{
+    padding-right: 3px;
+}
+.link-ig, .link-telegram, .link-discord{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-family: 'Fredoka', sans-serif;
+    padding: 4px;
+}
+.link-ig:hover, .link-telegram:hover, .link-discord:hover{
+    transition: 0.4s;
+    -webkit-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.1);
+    padding: 0;
+    width: fit-content;
+}
+
+p{
+    font-family: inherit;
+}
+
+/* FIM Aside- direita */
+
+/* Rodapé */
+.rodape{
+}
+.rodape-link{
+    color: white;
+}
+/* Fim rodapé */
