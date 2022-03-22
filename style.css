@@ -257,8 +257,13 @@ body{
 }
 .conteudo-blog-thumb{
     height: 100%;
-    filter: blur(0.5px);
+    filter: blur(3px);
 }
+.conteudo-blog-thumb:hover{
+    filter: blur(0px);
+    transition: 0.386s;
+}
+
 .conteudo-blog-nomeplaylist{
     position: absolute;
     color: white;
@@ -281,6 +286,54 @@ body{
 
 
 /* FIM - Conteudo blog */
+
+/* Doações */
+.conteudo-doacoes-cont{
+    display: grid;
+    grid-template: "a b c d"
+                    "e e e e"
+                    "f f g g";
+    height: 90vh;
+    align-items: center;
+}
+.conteudo-doacoes-site{
+    grid-area: a;
+}
+.conteudo-doacoes-videos{
+    grid-area: b;
+}
+.conteudo-doacoes-pedidos{
+    grid-area: c;
+}
+.conteudo-doacoes-doacoes{
+    grid-area: d;
+}
+.conteudo-doacoes-presente{
+    grid-area: e;
+}
+.conteudo-doacoes-imgpix{
+    grid-area: f;
+}
+.conteudo-doacoes-pix{
+    grid-area: g;
+}
+/* Fim grid */
+
+.conteudo-doacoes-sbt{
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(184, 187, 194);
+    text-shadow: #ffffff 0.5px 0 0.2px;
+    font-weight: 300;
+    text-align: center;
+    padding: 1.3vh;
+}
+.conteudo-doacoes-p{
+    color: rgb(184, 187, 194);
+    font-family: 'Prata', serif;
+    text-align: center;
+}
+
+/* FIM - Doações */
 
 /* Fim Main- Conteudo principal */
 
